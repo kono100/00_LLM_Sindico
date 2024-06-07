@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAPI-Swagger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7493988f7f5b9a2d879334b084771d2f461ad30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70b5bcba391ad29141d4e255f84e5f9b5ce97078")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAPI-Swagger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAPI-Swagger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
