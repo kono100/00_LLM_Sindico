@@ -12,7 +12,7 @@ using WebAPI_Swagger.Context;
 namespace WebAPI_Swagger.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240608174553_initial")]
+    [Migration("20240608195330_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -37,6 +37,9 @@ namespace WebAPI_Swagger.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Endereco")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ID_Produto")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")

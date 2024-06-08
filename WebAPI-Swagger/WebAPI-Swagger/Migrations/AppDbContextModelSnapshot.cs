@@ -36,6 +36,9 @@ namespace WebAPI_Swagger.Migrations
                     b.Property<string>("Endereco")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ID_Produto")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");

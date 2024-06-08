@@ -20,7 +20,8 @@ namespace WebAPI_Swagger.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     Contato = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Endereco = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Endereco = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ID_Produto = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -50,11 +51,11 @@ namespace WebAPI_Swagger.Migrations
 
             migrationBuilder.InsertData(
                 table: "Fornecedores",
-                columns: new[] { "Id", "Contato", "Endereco", "Nome" },
+                columns: new[] { "Id", "Contato", "Endereco", "ID_Produto", "Nome" },
                 values: new object[,]
                 {
-                    { 1, "contato@fornecedorA.com", "Endereço A", "Fornecedor A" },
-                    { 2, "contato@fornecedorB.com", "Endereço B", "Fornecedor B" }
+                    { 1, "contato@fornecedorA.com", "Endereço A", null, "Fornecedor A" },
+                    { 2, "contato@fornecedorB.com", "Endereço B", null, "Fornecedor B" }
                 });
 
             migrationBuilder.InsertData(
