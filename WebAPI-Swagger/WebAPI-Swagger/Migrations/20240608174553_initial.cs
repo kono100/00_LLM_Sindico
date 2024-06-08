@@ -7,7 +7,7 @@
 namespace WebAPI_Swagger.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,7 @@ namespace WebAPI_Swagger.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Nome = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     Contato = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Endereco = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -33,9 +33,9 @@ namespace WebAPI_Swagger.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
-                    Preco = table.Column<decimal>(type: "decimal(10,2)", precision: 10, scale: 2, nullable: false),
-                    Estoque = table.Column<int>(type: "int", nullable: false),
+                    Nome_Produto = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: true),
+                    Preco = table.Column<decimal>(type: "decimal(10,2)", precision: 10, scale: 2, nullable: true),
+                    Estoque = table.Column<int>(type: "int", nullable: true),
                     FornecedorId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -59,7 +59,7 @@ namespace WebAPI_Swagger.Migrations
 
             migrationBuilder.InsertData(
                 table: "Produtos",
-                columns: new[] { "Id", "Estoque", "FornecedorId", "Nome", "Preco" },
+                columns: new[] { "Id", "Estoque", "FornecedorId", "Nome_Produto", "Preco" },
                 values: new object[,]
                 {
                     { 1, 50, null, "Caderno", 7.99m },

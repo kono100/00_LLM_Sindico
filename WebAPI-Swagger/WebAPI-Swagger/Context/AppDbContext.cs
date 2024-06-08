@@ -15,7 +15,7 @@ namespace WebAPI_Swagger.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Produto>()
-                .Property(p => p.Nome)
+                .Property(p => p.Nome_Produto)
                 .HasMaxLength(80);
 
             modelBuilder.Entity<Produto>()
@@ -24,9 +24,9 @@ namespace WebAPI_Swagger.Context
 
             modelBuilder.Entity<Produto>()
                 .HasData(
-                    new Produto { Id = 1, Nome = "Caderno", Preco = 7.99M, Estoque = 50 },
-                    new Produto { Id = 2, Nome = "Lápis", Preco = 1.99M, Estoque = 100 },
-                    new Produto { Id = 3, Nome = "Borracha", Preco = 0.75M, Estoque = 20 }
+                    new Produto { Id = 1, Nome_Produto = "Caderno", Preco = 7.99M, Estoque = 50 },
+                    new Produto { Id = 2, Nome_Produto = "Lápis", Preco = 1.99M, Estoque = 100 },
+                    new Produto { Id = 3, Nome_Produto = "Borracha", Preco = 0.75M, Estoque = 20 }
                 );
 
             modelBuilder.Entity<Fornecedor>()

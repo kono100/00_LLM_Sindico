@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using WebAPI_Swagger.Context;
 using WebAPI_Swagger.Model;
 
@@ -17,12 +19,11 @@ namespace WebAPI_Swagger.Controllers
             _context = context;
         }
 
-
         // GET: api/Produtos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
         {
-            return await _context.Produtos.ToListAsync();
+            return await _context.Produtos.Include(p => p.Fornecedor).ToListAsync();
         }
 
 

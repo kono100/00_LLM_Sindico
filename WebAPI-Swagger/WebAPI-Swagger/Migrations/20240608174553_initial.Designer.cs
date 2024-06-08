@@ -12,8 +12,8 @@ using WebAPI_Swagger.Context;
 namespace WebAPI_Swagger.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240607023121_Initial")]
-    partial class Initial
+    [Migration("20240608174553_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,7 +40,6 @@ namespace WebAPI_Swagger.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -67,24 +66,23 @@ namespace WebAPI_Swagger.Migrations
 
             modelBuilder.Entity("WebAPI_Swagger.Model.Produto", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("Id"));
 
-                    b.Property<int>("Estoque")
+                    b.Property<int?>("Estoque")
                         .HasColumnType("int");
 
                     b.Property<int?>("FornecedorId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Nome")
-                        .IsRequired()
+                    b.Property<string>("Nome_Produto")
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<decimal>("Preco")
+                    b.Property<decimal?>("Preco")
                         .HasPrecision(10, 2)
                         .HasColumnType("decimal(10,2)");
 
@@ -99,30 +97,32 @@ namespace WebAPI_Swagger.Migrations
                         {
                             Id = 1,
                             Estoque = 50,
-                            Nome = "Caderno",
+                            Nome_Produto = "Caderno",
                             Preco = 7.99m
                         },
                         new
                         {
                             Id = 2,
                             Estoque = 100,
-                            Nome = "Lápis",
+                            Nome_Produto = "Lápis",
                             Preco = 1.99m
                         },
                         new
                         {
                             Id = 3,
                             Estoque = 20,
-                            Nome = "Borracha",
+                            Nome_Produto = "Borracha",
                             Preco = 0.75m
                         });
                 });
 
             modelBuilder.Entity("WebAPI_Swagger.Model.Produto", b =>
                 {
-                    b.HasOne("WebAPI_Swagger.Model.Fornecedor", null)
+                    b.HasOne("WebAPI_Swagger.Model.Fornecedor", "Fornecedor")
                         .WithMany("Produtos")
                         .HasForeignKey("FornecedorId");
+
+                    b.Navigation("Fornecedor");
                 });
 
             modelBuilder.Entity("WebAPI_Swagger.Model.Fornecedor", b =>
