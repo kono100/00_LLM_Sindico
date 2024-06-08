@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Migrations\\20240608195330_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebAPI-Swagger\\Migrations\\20240608195330_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DFB46889-1671-42B3-8C5F-F14BB869812C}|WebAPI-Swagger\\WebAPI-Swagger.csproj|c:\\users\\user\\desktop\\faculdade\\reges\\c#\\webapi-swagger\\webapi-swagger\\webapi-swagger\\model\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFB46889-1671-42B3-8C5F-F14BB869812C}|WebAPI-Swagger\\WebAPI-Swagger.csproj|solutionrelative:webapi-swagger\\model\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{DFB46889-1671-42B3-8C5F-F14BB869812C}|WebAPI-Swagger\\WebAPI-Swagger.csproj|c:\\users\\user\\desktop\\faculdade\\reges\\c#\\webapi-swagger\\webapi-swagger\\webapi-swagger\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DFB46889-1671-42B3-8C5F-F14BB869812C}|WebAPI-Swagger\\WebAPI-Swagger.csproj|solutionrelative:webapi-swagger\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB46889-1671-42B3-8C5F-F14BB869812C}|WebAPI-Swagger\\WebAPI-Swagger.csproj|c:\\users\\user\\desktop\\faculdade\\reges\\c#\\webapi-swagger\\webapi-swagger\\webapi-swagger\\migrations\\20240608195330_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFB46889-1671-42B3-8C5F-F14BB869812C}|WebAPI-Swagger\\WebAPI-Swagger.csproj|solutionrelative:webapi-swagger\\migrations\\20240608195330_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFB46889-1671-42B3-8C5F-F14BB869812C}|WebAPI-Swagger\\WebAPI-Swagger.csproj|c:\\users\\user\\desktop\\faculdade\\reges\\c#\\webapi-swagger\\webapi-swagger\\webapi-swagger\\controllers\\fornecedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "20240608195330_initial.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Migrations\\20240608195330_initial.cs",
               "RelativeDocumentMoniker": "WebAPI-Swagger\\Migrations\\20240608195330_initial.cs",
@@ -71,26 +71,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProdutosController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Controllers\\ProdutosController.cs",
               "RelativeDocumentMoniker": "WebAPI-Swagger\\Controllers\\ProdutosController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Controllers\\ProdutosController.cs",
               "RelativeToolTip": "WebAPI-Swagger\\Controllers\\ProdutosController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAkwBsAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAA5wBsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T01:23:05.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Fornecedor.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Model\\Fornecedor.cs",
               "RelativeDocumentMoniker": "WebAPI-Swagger\\Model\\Fornecedor.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Model\\Fornecedor.cs",
               "RelativeToolTip": "WebAPI-Swagger\\Model\\Fornecedor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T02:15:16.258Z",
               "EditorCaption": ""
@@ -117,7 +117,19 @@
               "RelativeToolTip": "WebAPI-Swagger\\Context\\AppDbContext.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAowBQAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T00:52:57.102Z",
+              "WhenOpened": "2024-05-14T00:52:57.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Model\\Produto.cs",
+              "RelativeDocumentMoniker": "WebAPI-Swagger\\Model\\Produto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Model\\Produto.cs",
+              "RelativeToolTip": "WebAPI-Swagger\\Model\\Produto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T23:56:48.279Z",
               "EditorCaption": ""
             },
             {
@@ -130,21 +142,7 @@
               "RelativeToolTip": "WebAPI-Swagger\\Controllers\\FornecedoresController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T02:22:42.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Model\\Produto.cs",
-              "RelativeDocumentMoniker": "WebAPI-Swagger\\Model\\Produto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\FACULDADE\\REGES\\C#\\WebAPI-Swagger\\WebAPI-Swagger\\WebAPI-Swagger\\Model\\Produto.cs",
-              "RelativeToolTip": "WebAPI-Swagger\\Model\\Produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T23:56:48.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T02:22:42.168Z"
             },
             {
               "$type": "Document",
