@@ -38,13 +38,13 @@ namespace WebAPI_Swagger.Context
                 new Fornecedor { Id = 1, Nome = "Fornecedor A",
                     Contato = "contato@fornecedorA.com",
                     ID_Produto = 1,
-                    Nome_Produto1 = "Caderno",
+                    Nome_Produto = "Caderno",
                     Endereco = "Endereço A" },
 
                 new Fornecedor { Id = 2, Nome = "Fornecedor B",
                     Contato = "contato@fornecedorB.com",
                     ID_Produto = 2,
-                    Nome_Produto1 = "Lápis",
+                    Nome_Produto = "Lápis",
                     Endereco = "Endereço B" },
 
                 new Fornecedor
@@ -53,7 +53,7 @@ namespace WebAPI_Swagger.Context
                     Nome = "Fornecedor C",
                     Contato = "contato@fornecedorC.com",
                     ID_Produto = 3,
-                    Nome_Produto1 = "Borracha",
+                    Nome_Produto = "Borracha",
                     Endereco = "Endereço C"
                 }
             );

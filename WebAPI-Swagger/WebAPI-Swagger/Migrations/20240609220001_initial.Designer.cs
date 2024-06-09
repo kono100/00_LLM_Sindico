@@ -12,7 +12,7 @@ using WebAPI_Swagger.Context;
 namespace WebAPI_Swagger.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240609212711_initial")]
+    [Migration("20240609220001_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -46,7 +46,7 @@ namespace WebAPI_Swagger.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Nome_Produto1")
+                    b.Property<string>("Nome_Produto")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -61,7 +61,7 @@ namespace WebAPI_Swagger.Migrations
                             Endereco = "Endereço A",
                             ID_Produto = 1,
                             Nome = "Fornecedor A",
-                            Nome_Produto1 = "Caderno"
+                            Nome_Produto = "Caderno"
                         },
                         new
                         {
@@ -70,7 +70,7 @@ namespace WebAPI_Swagger.Migrations
                             Endereco = "Endereço B",
                             ID_Produto = 2,
                             Nome = "Fornecedor B",
-                            Nome_Produto1 = "Lápis"
+                            Nome_Produto = "Lápis"
                         },
                         new
                         {
@@ -79,7 +79,7 @@ namespace WebAPI_Swagger.Migrations
                             Endereco = "Endereço C",
                             ID_Produto = 3,
                             Nome = "Fornecedor C",
-                            Nome_Produto1 = "Borracha"
+                            Nome_Produto = "Borracha"
                         });
                 });
 

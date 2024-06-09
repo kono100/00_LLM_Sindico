@@ -22,7 +22,7 @@ namespace WebAPI_Swagger.Migrations
                     Contato = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Endereco = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ID_Produto = table.Column<int>(type: "int", nullable: true),
-                    Nome_Produto1 = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nome_Produto = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -52,7 +52,7 @@ namespace WebAPI_Swagger.Migrations
 
             migrationBuilder.InsertData(
                 table: "Fornecedores",
-                columns: new[] { "Id", "Contato", "Endereco", "ID_Produto", "Nome", "Nome_Produto1" },
+                columns: new[] { "Id", "Contato", "Endereco", "ID_Produto", "Nome", "Nome_Produto" },
                 values: new object[,]
                 {
                     { 1, "contato@fornecedorA.com", "Endereço A", 1, "Fornecedor A", "Caderno" },

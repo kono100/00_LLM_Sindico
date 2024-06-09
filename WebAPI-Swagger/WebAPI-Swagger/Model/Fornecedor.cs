@@ -10,7 +10,8 @@ namespace WebAPI_Swagger.Model
 
         public int? ID_Produto { get; set; }
 
-        public string? Nome_Produto1 { get; set; }
+        public string? Nome_Produto { get; set; }
+
 
         // Lista de produtos do fornecedor
         public ICollection<Produto>? Produtos { get; set; }
