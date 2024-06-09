@@ -12,7 +12,7 @@ using WebAPI_Swagger.Context;
 namespace WebAPI_Swagger.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240608195330_initial")]
+    [Migration("20240609212711_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -39,12 +39,15 @@ namespace WebAPI_Swagger.Migrations
                     b.Property<string>("Endereco")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ID_Produto")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("ID_Produto")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Nome_Produto1")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -56,14 +59,27 @@ namespace WebAPI_Swagger.Migrations
                             Id = 1,
                             Contato = "contato@fornecedorA.com",
                             Endereco = "Endereço A",
-                            Nome = "Fornecedor A"
+                            ID_Produto = 1,
+                            Nome = "Fornecedor A",
+                            Nome_Produto1 = "Caderno"
                         },
                         new
                         {
                             Id = 2,
                             Contato = "contato@fornecedorB.com",
                             Endereco = "Endereço B",
-                            Nome = "Fornecedor B"
+                            ID_Produto = 2,
+                            Nome = "Fornecedor B",
+                            Nome_Produto1 = "Lápis"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Contato = "contato@fornecedorC.com",
+                            Endereco = "Endereço C",
+                            ID_Produto = 3,
+                            Nome = "Fornecedor C",
+                            Nome_Produto1 = "Borracha"
                         });
                 });
 

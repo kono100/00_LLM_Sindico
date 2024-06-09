@@ -8,8 +8,8 @@ namespace WebAPI_Swagger.Model
         public decimal? Preco { get; set; }
         public int? Estoque { get; set; }
 
-        // Chave estrangeira para o fornecedor
-        public int? FornecedorId { get; set; }
+        //// Chave estrangeira para o fornecedor
+        //public int? FornecedorId { get; set; }
         public Fornecedor? Fornecedor { get; set; }
     }
 }

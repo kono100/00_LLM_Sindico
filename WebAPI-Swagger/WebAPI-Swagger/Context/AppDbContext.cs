@@ -35,8 +35,27 @@ namespace WebAPI_Swagger.Context
 
             // Adicione fornecedores durante a migração
             modelBuilder.Entity<Fornecedor>().HasData(
-                new Fornecedor { Id = 1, Nome = "Fornecedor A", Contato = "contato@fornecedorA.com", Endereco = "Endereço A" },
-                new Fornecedor { Id = 2, Nome = "Fornecedor B", Contato = "contato@fornecedorB.com", Endereco = "Endereço B" }
+                new Fornecedor { Id = 1, Nome = "Fornecedor A",
+                    Contato = "contato@fornecedorA.com",
+                    ID_Produto = 1,
+                    Nome_Produto1 = "Caderno",
+                    Endereco = "Endereço A" },
+
+                new Fornecedor { Id = 2, Nome = "Fornecedor B",
+                    Contato = "contato@fornecedorB.com",
+                    ID_Produto = 2,
+                    Nome_Produto1 = "Lápis",
+                    Endereco = "Endereço B" },
+
+                new Fornecedor
+                {
+                    Id = 3,
+                    Nome = "Fornecedor C",
+                    Contato = "contato@fornecedorC.com",
+                    ID_Produto = 3,
+                    Nome_Produto1 = "Borracha",
+                    Endereco = "Endereço C"
+                }
             );
         }
     }
